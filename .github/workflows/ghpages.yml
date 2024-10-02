@@ -2,6 +2,9 @@ name: Deploy
 
 on: [push]
 
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 jobs:
   build:
     if: ${{ github.ref == 'refs/heads/master' }} 
