@@ -18,7 +18,7 @@ docker run -d \
   --name clash \
   -v clash.yaml:/root/.config/clash/config.yaml \
   -p 8080:8080 -p 7890:7890 \
-  clash-and-dashboard:latest
+  sdcom/clash-and-dashboard:latest
 ```
 
 - 8080为管理界面端口
