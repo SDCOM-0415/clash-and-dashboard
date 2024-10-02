@@ -3,11 +3,12 @@
 - 项目用于将Dashboard管理页面直接打包进clash的docker镜像中，**实现一个容器同时启动Clash和Dashboard**
 - 修改了后台接口部分代码，使后台只会连接到同一docker容器中clash的9090端口，不再需要配置即可直接管理。
 - 当然，因为去除了后台接口配置功能，所以此页面只能一对一了。
+- docker hub：https://hub.docker.com/repository/docker/sdcom/mihomo-and-dashboard/
 
-## 打包
-使用GitHub actions
+## 自建镜像
+使用GitHub actions，手动配置docker hub密钥等
 
-## 启动
+## 直接使用
 获取镜像
 ```sh
 docker pull sdcom/mihomo-and-dashboard:latest
