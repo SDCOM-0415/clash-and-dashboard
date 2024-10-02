@@ -5,14 +5,19 @@
 - 当然，因为去除了后台接口配置功能，所以此页面只能一对一了。
 
 ## 打包
-```sh
-npm install -g pnpm
-pnpm i
-pnpm build
-docker build -f ./build/Dockerfile -t clash-and-dashboard:latest .
-```
+使用GitHub actions
 
 ## 启动
+获取镜像
+```sh
+docker pull sdcom/mihomo-and-dashboard:latest
+```
+国内镜像
+```sh
+docker pull docker.1panel.dev/sdcom/mihomo-and-dashboard::latest
+```
+
+运行
 ```sh
 docker run -d \
   --name clash \
